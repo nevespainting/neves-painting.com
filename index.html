@@ -7,37 +7,149 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50">
-    <div class="max-w-4xl mx-auto px-4 py-8">
-        <header class="text-center mb-12">
-            <h1 class="text-4xl font-bold text-gray-800 mb-4">Neves Painting</h1>
-            <p class="text-xl text-gray-600">Professional Painting Services in Florida</p>
-        </header>
-
-        <main class="space-y-8">
-            <section class="bg-white rounded-lg shadow-lg p-6">
-                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Our Services</h2>
-                <div class="space-y-2 text-gray-600">
-                    <p>✓ Interior Painting</p>
-                    <p>✓ Exterior Painting</p>
-                    <p>✓ Residential & Commercial</p>
-                    <p>✓ Professional & Reliable Service</p>
-                </div>
-            </section>
-
-            <section class="bg-white rounded-lg shadow-lg p-6">
-                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Contact Us</h2>
-                <p class="text-gray-600 mb-6">Get your free quote today!</p>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-3">
+                <svg class="w-8 h-8 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 10V8h-4V4h-2v4h-4V4H8v4H4v2h4v4H4v2h4v4h2v-4h4v4h2v-4h4v-2h-4v-4h4zm-6 4h-4v-4h4v4z"/>
+                </svg>
+                <h1 class="text-2xl font-bold text-gray-800">Neves Painting</h1>
+            </div>
                 <a href="https://wa.me/18024652030" 
-                   class="inline-block bg-green-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-green-700 transition-colors"
-                   target="_blank">
-                    Message us on WhatsApp
+                   class="flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors">
+                    <span class="hidden sm:inline">Contact Us</span>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+                    </svg>
                 </a>
-            </section>
-        </main>
+            </div>
+        </div>
+    </nav>
 
-        <footer class="mt-12 text-center text-gray-500 text-sm">
-            <p>© 2024 Neves Painting | A JC Neves Painting Inc Company. All rights reserved.</p>
-        </footer>
-    </div>
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        <!-- Hero Section -->
+        <section class="text-center mb-16">
+            <div class="flex items-center justify-center gap-4 mb-4">
+                <svg class="w-12 h-12 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 10V8h-4V4h-2v4h-4V4H8v4H4v2h4v4H4v2h4v4h2v-4h4v4h2v-4h4v-2h-4v-4h4zm-6 4h-4v-4h4v4z"/>
+                </svg>
+                <h2 class="text-4xl font-bold text-gray-800">Professional Painting Services in Florida</h2>
+            </div>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Transform your space with our expert painting services. Quality, precision, and reliability in every brushstroke.</p>
+        </section>
+
+        <!-- Portfolio Gallery -->
+        <section class="mb-16">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-8">Our Work</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Image placeholders - Replace src with actual images -->
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="./images/interior.jpeg" alt="Interior Painting Example 1" class="w-full h-64 object-cover"/>
+                    <div class="p-4 bg-white">
+                        <h4 class="font-semibold text-gray-800">Interior Painting</h4>
+                    </div>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="./images/exterior.jpeg" alt="Exterior Painting Example" class="w-full h-64 object-cover"/>
+                    <div class="p-4 bg-white">
+                        <h4 class="font-semibold text-gray-800">Exterior Painting</h4>
+                    </div>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="./images/commercial.jpg" alt="Commercial Painting Example" class="w-full h-64 object-cover"/>
+                    <div class="p-4 bg-white">
+                        <h4 class="font-semibold text-gray-800">Commercial Projects</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="grid md:grid-cols-2 gap-8 mb-16">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-6">Our Services</h3>
+                <ul class="space-y-4 text-gray-600">
+                    <li class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Interior Painting
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Exterior Painting
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Residential Projects
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Commercial Projects
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-6">Why Choose Us</h3>
+                <ul class="space-y-4 text-gray-600">
+                    <li class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Licensed and Insured
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Professional Team
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Quality Materials
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Satisfaction Guaranteed
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="bg-white rounded-lg shadow-lg p-8 text-center">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Get Your Free Quote Today</h3>
+            <p class="text-gray-600 mb-6">Contact us for a detailed quote and consultation</p>
+            <a href="https://wa.me/18024652030" 
+               class="inline-flex items-center gap-2 bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition-colors">
+                <span>Message us on WhatsApp</span>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+                </svg>
+            </a>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 mt-12">
+        <div class="max-w-6xl mx-auto px-4 py-8">
+            <div class="text-center">
+                <p class="mb-2">Neves Painting</p>
+                <p class="mb-2">Serving Florida with Quality Painting Services</p>
+                <p class="text-sm">© 2024 Neves Painting | A JC Neves Painting Inc Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
